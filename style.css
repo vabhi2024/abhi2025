@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans';
+}
+
+body {
+  background: linear-gradient(135deg, #d1e0ff, #b2baff);
+  color: #333;
+  font-family: 'open sans';
+  padding-bottom: 80px;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: red;
+    color: white;
+    z-index: 888;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'open sans';
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+  color: white;
+   top: 20px;
+   height: 20px;
+  width: 20px;
+}
+
+.btn, .menu-btn {
+    background: red;
+    color: white;
+    border: 1.5px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   font-family: 'open sans';
+}
+
+.btn:hover, .menu-btn:hover {
+    background: firebrick;
+}
+
+/* Full-Screen Dropdown */
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    z-index: 1000;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    }
+
+.menu-content a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    margin: 15px;
+    font-family: 'open sans';
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.menu-content a:hover {
+    color: #ff6600;
+}
+
+/* Close Button */
+
+.close-btn {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: none;
+}
+
+/* Google.search */
+
+.search-main {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 16px;
+  border: none;
+  gap: 10px;
+}
+
+.search {
+  flex: 1;
+  padding: 12px;
+  font-family: 'open sans';
+  font-weight: 550;
+  border-radius: 8px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  background: white;
+  color: darkblue;
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.search:hover {
+  border: none;
+  outline: none;
+}
+
+/* SLIDER */
+
+.carousel {
+    margin: 0 auto;
+    width: 95%;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 135px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    font-size: 2rem;
+}
+
+.carousel-container img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Tool Section */
+
+.main-tool {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tool img {
+  height: 50px;
+  width: 50px;
+}
+
+.tool p {
+  margin: 0 auto;
+  font-family: 'open sans';
+  font-weight: 550;
+  margin-top: 16px;
+}
+
+/* Categories Section */
+
+.categories {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.category {
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.category img {
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+.category p {
+  font-family: 'open sans';
+  font-weight: 550;
+  margin-top: -9px;
+}
+
+/* Flash Sale Section */
+
+.flash-sale {
+  font-family: 'Open Sans';
+  border-radius: 16px;
+  margin: 0 auto;
+  border: none;
+  width: 95%;
+  
+  position: relative;
+  
+  /* Center content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flash-sale h3 {
+  font-family: 'open sans';
+  margin-bottom: 16px;
+}
+
+.sale-items {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.sale-card {
+  font-family: 'open sans';
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.sale-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+/* Navigation Bar */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'open sans';
+  font-size: 18px;
+}
+
+footer a.active {
+  color: white;
+  font-size: 18px;
+}
+
+/* --- POP UP LOG IN CSS --- */
+
+        /* Modal background */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Modal content box */
+        .modal-content {
+            background-color: azure;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: 'open sans';
+            font-weight: 550;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        /* Close button */
+        .close {
+            float: right;
+            font-size: 30px;
+            cursor: pointer;
+        }
+.modal-content img {
+  height: 120px;
+  width: 120px;
+  padding: 8px;
+  margin-left: 27px;
+}
+
+        /* Input fields */
+        .input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            font-weight: 550;
+            font-family: 'open sans';
+            border: 1px solid blue;
+            box-shadow: 0 0 2px blue;
+            border-radius: 5px;
+        }
+       
+        .input:hover {
+          --hover: #22ff22;
+          animation: btn 0.5s;
+          color: white;
+          background: darkslategrey;
+          font-weight: bold;
+          border: 1px solid black;
+          outline: none;
+          box-shadow: 0 0 5em 5em transparent;
+     }
+
+          @keyframes btn {
+            0% {
+              box-shadow: 0 0 0 0 var(--hover);
+            }
+          }
+        
+
+        /* Show Password checkbox */
+        .show-password {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 15px;
+            font-weight: 550;
+            font-family: 'open sans';
+        }
+
+        .show-password input {
+            margin: 5px;
+        }
+
+        /* Login button inside modal */
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            font-family: 'open sans';
+            font-weight: 550;
+            font-size: 15px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Error message */
+        #errorMessage {
+            color: red;
+            display: none;
+            font-size: 15px;
+            font-weight: 550;
+            font-family: 'open sans';
+        }
+
+/* --- POP UP LOG IN CSS --- */
+
+.popup-overlay {
+      display: none;
+      position: fixed;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+    }
+    .popup {
+      background-color: white;
+      width: 90%;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .popup h2 {
+      margin-top: 0;
+    }
+    .popup button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .popup button:hover {
+      background-color: #ff1a1a;
+    }
+    audio {
+      width: 100%;
+      margin-top: 15px;
+    }
