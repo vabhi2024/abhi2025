@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans';
+}
+
+body {
+  background: linear-gradient(135deg, #d1e0ff, #b2baff);
+  color: #333;
+  font-family: 'open sans';
+  padding-bottom: 80px;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: red;
+    color: white;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'open sans';
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+  color: white;
+   top: 20px;
+   height: 20px;
+  width: 20px;
+}
+
+.btn, .menu-btn {
+    background: red;
+    color: white;
+    border: 1.5px solid white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   font-family: 'open sans';
+}
+
+.btn:hover, .menu-btn:hover {
+    background: firebrick;
+}
+
+/* Navigation Bar */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'open sans';
+  font-size: 18px;
+}
+
+footer a.active {
+  color: white;
+  font-size: 18px;
+}
+
+/
