@@ -24,7 +24,7 @@ header {
     padding: 12px;
     background: red;
     color: white;
-    z-index: 999;
+    z-index: 900;
 }
 
 .logo {
@@ -39,10 +39,10 @@ nav {
 }
 
 header img {
-  color: white;
+   color: white;
    top: 20px;
    height: 20px;
-  width: 20px;
+   width: 20px;
 }
 
 .btn, .menu-btn {
@@ -69,7 +69,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 900;
 }
 
 footer a {
@@ -83,5 +83,3 @@ footer a.active {
   color: white;
   font-size: 18px;
 }
-
-/
