@@ -2,46 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhi UniTech is a software solution web application" />
   <title>Abhi UniTech</title>
   
+  <!-- Meta Information -->
+  <meta name="description" content="Abhi UniTech is a software solution web application" />
+  <meta name="keywords" content="@abhi33320k, abhi3332k, #abhi33320k, king abhi, abhi self care, abhi selfcare, abhiselfcare" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="fab-icon.svg" />
-  
-  <!-- FontAwesome for Icons -->
+
+  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  
+
   <!-- Google Fonts - Open Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="page.css" />
 </head>
 <body>
-
+  
   <!-- Header Section -->
   <header>
-    <h1 class="logo">Abhi UniTech</h1>
+    <div class="logo">Abhi UniTech</div>
     <nav>
-      <button class="btn" id="loginBtn" aria-label="Login to your account">
-        <i class="fas fa-user" aria-hidden="true"></i>
+      <button class="btn" id="loginBtn" aria-label="Login">
+        <i class="fa fa-user" aria-hidden="true"></i>
       </button>
-      <button class="menu-btn" onclick="openMenu()" aria-label="Open navigation menu">☰</button>
+      <button class="menu-btn" onclick="openMenu()" aria-label="Open Menu">☰</button>
     </nav>
   </header>
   
-  <!-- Iframe Section with Fallback -->
-   <iframe src="http://emojidb.org/twitter-symbol-emojis" width="100%" height="800" frameborder="0"></iframe>
-
+  <!-- Iframe Section -->
+  <section class="iframe-container">
+    <iframe 
+      src="https://emojidb.org/twitter-symbol-emojis" 
+      width="100%" 
+      height="900px" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </section>
+  
   <!-- Footer Navigation -->
   <footer>
-    <a href="#" aria-label="View Favorites"><i class="fas fa-heart"></i></a>
-    <a href="#" aria-label="Play Videos"><i class="fas fa-play-circle"></i></a>
-    <a href="#" class="active" aria-label="Go to Home"><i class="fas fa-home"></i></a>
-    <a href="#" aria-label="Check Messages"><i class="fas fa-envelope"></i></a>
-    <a href="#" aria-label="View Profile"><i class="fas fa-user"></i></a>
+    <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
+    <a href="#" aria-label="Play"><i class="fa fa-play-circle"></i></a>
+    <a href="#" class="active" aria-label="Home"><i class="fa fa-home"></i></a>
+    <a href="#" aria-label="Messages"><i class="fas fa-envelope"></i></a>
+    <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
   </footer>
+  
+  <!-- JavaScript Section -->
+  <script>
+    // Login Button Event
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      alert('Login feature is under development!');
+    });
+
+    // Menu Button Event
+    function openMenu() {
+      alert('Menu opened! Add your menu implementation here.');
+    }
+  </script>
 
 </body>
 </html>
