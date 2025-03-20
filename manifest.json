@@ -4,8 +4,8 @@
     "description": "A Progressive Web App for Abhi SelfCare",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "red",
-    "theme_color": "darkblue",
+    "background_color": "darkblue",
+    "theme_color": "red",
     "icons": [
         {
             "src": "/icon-192x192.png",
