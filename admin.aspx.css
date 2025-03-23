@@ -133,7 +133,8 @@ header img {
   border-radius: 8px;
   font-size: 15px;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
 }
 
 .icon {
@@ -146,7 +147,8 @@ header img {
   border-radius: 8px;
   margin: 0 auto;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
   }
 
 .search:hover {
@@ -202,7 +204,8 @@ header img {
         .card {
             background: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
             overflow: hidden;
             transition: transform 1s ease-in-out;
             cursor: pointer;
