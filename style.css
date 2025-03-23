@@ -132,7 +132,8 @@ header img {
   border-radius: 8px;
   font-size: 15px;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
 }
 
 .icon {
@@ -144,7 +145,8 @@ header img {
   height: auto;
   border-radius: 8px;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
   }
 
 .search:hover {
@@ -204,7 +206,8 @@ header img {
   border-radius: 16px;
   padding: 12px;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
   text-align: center;
 }
 
@@ -236,8 +239,9 @@ header img {
   border-radius: 16px;
   padding: 12px;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
 }
 
 .category img {
@@ -289,7 +293,8 @@ header img {
   border-radius: 16px;
   padding: 16px;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
   position: relative;
 }
 
@@ -352,7 +357,8 @@ footer a.active {
             font-family: 'open sans';
             font-weight: 550;
             transform: translate(-50%, -50%);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
             text-align: center;
         }
 
@@ -457,7 +463,8 @@ footer a.active {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), 
+                  inset -2px -2px 5px rgba(255,255,255,0.1);
       text-align: center;
     }
     .popup h2 {
