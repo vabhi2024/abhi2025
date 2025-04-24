@@ -11,33 +11,14 @@
     <link rel="icon" type="image/svg+xml" href="fab-icon.svg">    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
+    <link rel="stylesheet" href="admin.aspx.css">
   </head>
 <body>
-  
-<!----------------------------------------->
-  <!-- POP UP OVERLAY -->
-  <div class="popup-overlay" id="popupOverlay">
-    <div class="popup">
-     
-      <h2>Welcome Back!</h2>
-      <p>This is Abhi UniTech Official Portal</p>
-      
-       <audio id="musicPlayer" controls autoplay loop>
-        <source src="voice.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
-      
-      <button onclick="closePopup()">Close</button>
-    </div>
-  </div>
-    <!----------------------------------------->
-  
+
     <!-- Header -->
-    <header>
+        <header>
       <div class="logo">Abhi UniTech</div>
         <nav>
           <button class="btn" id="loginBtn"><i class="fa fa-user" aria-hidden="true"></i></button>
@@ -45,31 +26,16 @@
           <button class="menu-btn" onclick="openMenu()">☰</button>          
         </nav>
     </header>
-
+  
   <!--------------- POP UP SIGN IN START ------------->
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="fab-icon.svg">
-            <h2 style="">Admin Login</h2>
-          <br>
-            <form id="loginForm">
-                <label for="username"></label>
-                <input class="input" type="text" id="username" placeholder="Enter Username" required>
-
-                <label for="password"></label>
-                <input class="input" type="password" id="password" placeholder="Enter Password" required>
-
-                <div class="show-password">
-                  <label for="showPassword">Show.Password</label>
-                    <input type="checkbox" id="showPassword">
-                    </div>
-
-                <p id="errorMessage">Invalid username or password!</p>
-
-                <button type="submit">Login</button>
-            </form>
-        </div>
+            <h2 style="color:red">● Active now</h2>
+          <br
+          <p>You are active now on administrative control panal</p>
+          <a href="index.html"><button>Sign Out</button></a>
+           </div>
     </div>
   <!--------------- POP UP SIGN IN END ------------->
   
@@ -77,32 +43,25 @@
     <div id="full-screen-menu" class="menu-overlay">
         <button class="close-btn" onclick="closeMenu()">✖</button>
         <div class="menu-content">
-            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="index.html">Home</a>
             <a href="http://adtech2021.netlify.app">About us</a>
             <a href="mailto:info@adtech.up.in">Contact us</a>
-            <a href="http://instagram.com/adtech.up.in">Explore more</a> 
-
-<div class="social-icons">
-  <i class="fab fa-facebook"></i>
-  <i class="fab fa-twitter"></i>
-   <i class="fab fa-linkedin-in"></i>
-  <i class="fas fa-map-marker-alt"></i>
-  <i class="fab fa-youtube"></i>
-</div>          
+            <a href="http://instagram.com/adtech.up.in">Explore more</a>            
         </div>
     </div>
-  
+
   <br>
   <br>
   <br>
   
-  <!-- Search Section -->
+<!-- Search Section -->
+      
   <div class="search-main">
     <input class="search" type="text" id="search-input" placeholder="Google Search" />
     <span class="icon" onclick="performSearch()"><i class="fa fa-search"></i></span>
   </div>
-
-   <!-- SLIDER -->
+  
+      <!-- SLIDER -->
       
       <div class="carousel">
         <div class="carousel-container">
@@ -115,103 +74,67 @@
          </div>
     </div>
   
-  <br>
-   <!-- tool Section -->
-  <div class="main-tool">
-    <a href="page/quotes.aspx.html">
-    <div class="tool">
-      <span><img src="icon/quotes.svg"></span>
-      <p>My Inspire</p>
-    </div></a>
-    
-    <a href="http://voicemaker.in">
-      <div class="tool">
-      <span><img src="icon/voice.svg"></span>
-      <p>AI Voice</p>
-    </div></a>
- </div>
+ <!-- Cards -->
+      <br>
+      
+  <div class="card-container">
+        <div class="card">
+            <h2>Call Bomber</h2>
+            <p>Click this card to navigate.</p>
+            <a href="https://callbomberz.in/" class="card-button">Open Web</a>
+        </div>
 
-  <br>
-  
-  <!-- Categories Section -->
-  <section class="categories">
-    
-    <a href="page/coolfont.aspx.html">
-    <div class="category">
-      <span><img src="icon/font.svg"></span>
-    </div></a>
+        <div class="card">
+            <h2>Track Device</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://google.com/android/find/" class="card-button">Open Web</a>
+        </div>
 
-    <a href="page/mylogo.aspx.html">
-    <div class="category">
-      <span><img src="icon/logo.svg"></span>
-      </div></a>
+        <div class="card">
+            <h2>Swap Face</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://magichour.ai/products/face-swap" class="card-button">Open Web</a>
+        </div>
+      
+        <div class="card" onclick="window.location.href='http://pornworks.com/en/'">
+            <h2>Remove Dress</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://dessi.co/undress" class="card-button">Open Web</a>
+        </div>
     
-    <a href="page/qr.aspx.html">
-    <div class="category">
-      <span><img src="icon/qr.svg"></span>
-      </div></a>
-    
-    <a href="page/android.aspx.html">
-    <div class="category">
-      <span><img src="icon/android.svg"></span>
-    </div></a>
-     </section>
-  
-  <br>
- 
-  <!-- Flash Sale Section -->
-  <section class="flash-sale">
-    <div class="sale-items">
+     <div class="card">
+            <h2>Create Kissing</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://vidu.com/templates" class="card-button">Open Web</a>
+        </div>
+
+      <div class="card">
+            <h2>Change Clothe</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://fitroom.app/editor" class="card-button">Open Web</a>
+        </div>
       
-      <a href="page/movies.aspx.html">       
-      <div class="sale-card">
-         <img src="icon/movie.svg" alt="Game Zone" />
-        <h3>Movies</h3>
-      </div></a>
-        
-       <a href="page/imgtools.aspx.html">
-       <div class="sale-card">
-        <img src="icon/imgtools.svg" alt="Robot Bomb" />
-         <h3>Compress</h3>
-      </div></a>
-      
-      <a href="page/emoticons.aspx.html">
-      <div class="sale-card">
-        <img src="icon/emoticon.svg" alt="New Lease" />
-        <h3>Emoticons</h3>
-      </div></a>
-      
-      <a href="page/svgicons.aspx.html">
-      <div class="sale-card">      
-        <img src="icon/svgicon.svg" alt="Robot Bomb" />
-        <h3>SVG Icons</h3>
-      </div></a>
-      
+      <div class="card">
+            <h2>Fake Details</h2>
+            <p>Click this card to navigate.</p>
+            <a href="http://fakedetail.com/" class="card-button">Open Web</a>
+        </div>
     </div>
-  </section>
-
-  <!-- Navigation Bar -->
-  <footer>
+    
+     
+    <!-- Footer -->
+      
+   <footer>
     <a href="#"><i class="fas fa-heart"></i></a>
      <a href="#"><i class="fa fa-play-circle"></i></a>
     <a href="#" class="active"><i class="fa fa-home"></i></a>
    <a href="#"><i class="fas fa-envelope"></i></a>
-    <a href="#"><i class="fas fa-user-plus"></i></a>
+    <a href="#"><i class="fas fa-user"></i></a>
   </footer>
-  
- <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(() => console.log("Service Worker Registered"))
-                .catch(error => console.log("Service Worker Registration Failed", error));
-        }
-    </script>
-
-  <script src="js/slider.js"></script>
-  <script src="js/nav.js"></script>
+      
   <script src="js/login.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/search.js"></script>
-  <script src="js/popup.js"></script>
-
+  <script src="js/slider.js"></script>
 </body>
-    </html>
+</html>
